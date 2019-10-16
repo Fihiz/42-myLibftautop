@@ -6,12 +6,12 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/16 11:41:54 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/16 11:53:58 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/10/16 12:50:15 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
