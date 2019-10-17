@@ -3,9 +3,10 @@
 
 int		main()
 {
-	char str[] = "Hello World";
+	char str[] = "";
+	char str2[] = "Hello";
 
-	printf("Looking for a w in %s\n", ft_strrchr(str, 'o'));
-	printf("Looking for a w with the true function %s\n", strrchr(str, 'o'));
+	printf("Looking with mine %d\n", ft_strncmp(str, str2, 6));
+	printf("Looking with the real one %d\n", strncmp(str, str2, 6));
 	return (0);
 }
