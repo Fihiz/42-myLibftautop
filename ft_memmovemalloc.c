@@ -1,38 +1,37 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   main.c                                           .::    .:/ .      .::   */
+/*   ft_memmove.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/22 12:40:36 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/22 20:06:10 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/10/15 14:44:33 by sad-aude     #+#   ##    ##    #+#       */
+/*   Updated: 2019/10/22 19:33:29 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-/* int		main()
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char desti[4] = "Jeux";
-	char str[10] = "Hellohello";
+	const char	*str;
+	char		*desti;
+	char		*temp;
+	size_t		i;
 
-	printf("Looking with mine %s\n", ft_memmove(desti, str, 4));
-	printf("Looking with the real one %s\n", memmove(desti, str, 4));
-	return (0);
-} */
-
-/* int		main()
-{
-	ft_putnbr_fd(-2, 1);
-	return (0);
-} */
-
-int		main()
-{
-	ft_putnbr_fd(95, 1);
-	putnbr(95);
-	return (0);
+	i = 0;
+	while (i < n)
+	{
+		temp[i] = str[i];
+		i++;
+	}
+	i = 0;
+	while (i < n)
+	{
+		desti[i] = temp[i];
+		i++;
+	}
+	desti[i] = temp[i];
+	return ((void *)desti);
 }
