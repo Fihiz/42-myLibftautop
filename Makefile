@@ -6,12 +6,14 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/10/24 16:03:26 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/10/24 18:46:36 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
 NAME	=	libft.a
+
+LIB		=	libft.h
 
 SRCS	=	ft_memset.c \
 			ft_bzero.c \
@@ -19,7 +21,6 @@ SRCS	=	ft_memset.c \
 			ft_memccpy.c \
 			ft_memmove.c \
 			ft_memchr.c \
-			ft_memcmp.c \
 			ft_strlen.c \
 			ft_isalpha.c \
 			ft_isdigit.c \
@@ -32,21 +33,10 @@ SRCS	=	ft_memset.c \
 			ft_strrchr.c \
 			ft_strncmp.c \
 			ft_strlcpy.c \
-			ft_strlcat.c \
-			ft_strnstr.c \
-			ft_atoi.c \
-			ft_calloc.c \
-			ft_strdup.c \
-			ft_substr.c \
-			ft_strjoin.c \
-			ft_strtrim.c \
-			ft_split.c \
-			ft_itoa.c \
-			ft_strmapi.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
-			ft_putnbr_fd.c
+			ft_putnbr_fd.c \
 
 OBJS	=	$(SRCS:.c=.o)
 
@@ -54,17 +44,16 @@ CC		=	gcc
 
 CFLAGS	=	-Wall -Wextra -Werror
 
-RM		=	rm -f
-
 all:	$(NAME)
 
 $(NAME):	$(OBJS)
-			$(CC) -o $(NAME) $(OBJS)
+			ar rcs $(NAME) $(OBJS)
 
-clean:		$(RM) $(OBJS)
+clean:
+			rm -f	$(OBJS)
 
 fclean:		clean
-			$(RM) $(NAME)
+			rm -f $(NAME)
 
 re:			fclean all
 
