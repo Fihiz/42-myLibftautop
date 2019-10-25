@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/10/24 18:46:36 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/10/25 17:27:19 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -44,10 +44,14 @@ CC		=	gcc
 
 CFLAGS	=	-Wall -Wextra -Werror
 
+HEADER	=	libft.h
+
 all:	$(NAME)
 
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
+
+%.o:%.c $(HEADER)
 
 clean:
 			rm -f	$(OBJS)
@@ -55,6 +59,4 @@ clean:
 fclean:		clean
 			rm -f $(NAME)
 
-re:			fclean all
-
-.PHONY:		all fclean clean re
+re: fclean all

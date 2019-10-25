@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/21 18:08:52 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/22 12:46:16 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/10/25 17:15:17 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -28,6 +28,6 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb / 10, fd);
 		ft_putnbr_fd(nb % 10, fd);
 	}
-	else 
+	else
 		ft_putchar_fd(nb + '0', fd);
 }

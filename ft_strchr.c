@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/16 11:41:54 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/16 18:36:32 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/10/25 17:15:51 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == c)
-			return ((char *)s + i); //+ i pour afficher a partir de l'occurence
+			return ((char *)s + i);
 		i++;
 	}
 	if (c == 0)

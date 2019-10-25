@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 12:18:44 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/17 15:37:38 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/10/25 17:18:59 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -37,8 +37,8 @@ int					ft_tolower(int c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strrchr(const char *s, int c);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
-size_t				ft_strlcpy(char *dst, const char *src, size_t size); //revenir dessuss
-size_t				ft_strlcat(char *dst, const char *src, size_t size); //revenir dessus
+size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
 void				*ft_calloc(size_t count, size_t size);
 char				*ft_strdup(const char *s1);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
