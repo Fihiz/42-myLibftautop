@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 14:44:33 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/24 15:23:40 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/10/30 17:21:38 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -21,9 +21,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t		i;
 
 	i = 0;
-	str = src;
+	str = (const char*)src;
 	desti = dest;
-	temp = NULL;
+	temp = 0;
 	while (i < n)
 	{
 		temp[i] = str[i];
@@ -35,6 +35,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		desti[i] = temp[i];
 		i++;
 	}
-	desti[i] = temp[i];
-	return ((void *)desti);
+	return (desti);
 }
