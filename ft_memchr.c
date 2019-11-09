@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 16:50:48 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/29 17:27:43 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/09 19:56:43 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -20,11 +20,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	str = s;
-	while (str[i] && i < n)
+	while (i < n)
 	{
-		if (i == (unsigned char)c)
-			return ((void*)str);
+		if (str[i] == (unsigned char)c)
+			return ((void*)str[i]);
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
