@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/10/25 17:27:19 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/11/11 20:20:17 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -21,6 +21,7 @@ SRCS	=	ft_memset.c \
 			ft_memccpy.c \
 			ft_memmove.c \
 			ft_memchr.c \
+			ft_memcmp.c \
 			ft_strlen.c \
 			ft_isalpha.c \
 			ft_isdigit.c \
@@ -33,6 +34,9 @@ SRCS	=	ft_memset.c \
 			ft_strrchr.c \
 			ft_strncmp.c \
 			ft_strlcpy.c \
+			ft_strnstr.c \
+			ft_atoi.c \
+			ft_strdup.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
