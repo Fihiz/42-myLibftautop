@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_memchr.c                                      .::    .:/ .      .::   */
+/*   ft_memcmp.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/15 16:50:48 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/11 14:26:14 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/11/11 17:17:54 by sad-aude     #+#   ##    ##    #+#       */
+/*   Updated: 2019/11/11 17:26:20 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t i)
 {
-	size_t		i;
-
-	i = 0;
-	while (i < n)
+	while (((char*)s1)[i] || ((char*)s2)[i])
 	{
-		if (((char*)s)[i] == c)
-			return (&((char*)s)[i]);
+		if (((char*)s1)[i] > ((char*)s2)[i] || ((char*)s2)[i] == 0)
+			return (1);
+		if (((char*)s1)[i] < ((char*)s2)[i] || ((char*)s1)[i] == 0)
+			return (-1);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
