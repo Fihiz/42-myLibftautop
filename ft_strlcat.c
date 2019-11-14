@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putchar_fd.c                                  .::    .:/ .      .::   */
+/*   ft_strlcat.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/10/21 17:56:05 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/13 15:14:02 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/11/14 12:44:59 by sad-aude     #+#   ##    ##    #+#       */
+/*   Updated: 2019/11/14 13:09:50 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
+size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
-	write(fd, &c, 1);
-}
+	int pos;
+	int pos2;
 
-int		main()
-{
-	ft_putchar_fd('c', 2);
+	pos = 0;
+	pos2 = 0;
+	while (src[pos] && pos < size)
+		pos++;
+	while (dst[pos2])
+		pos2++;
+
 	return (0);
 }
