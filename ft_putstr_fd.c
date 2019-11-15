@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/21 17:57:15 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/21 18:00:53 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/15 05:10:46 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,6 +15,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (s == 0)
+		return (NULL);
 	while (*s)
 	{
 		ft_putchar_fd(*s, fd);

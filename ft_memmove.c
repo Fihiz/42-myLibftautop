@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 14:44:33 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/14 15:42:59 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/15 04:15:20 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -24,6 +24,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	str = src;
 	desti = dest;
 	temp = dest;
+	if (str == 0 && desti == 0)
+		return (0);
 	if (n == 0)
 		return (desti);
 	while (i < n)
