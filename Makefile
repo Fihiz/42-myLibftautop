@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/11/15 00:52:19 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/11/15 07:21:54 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -35,6 +35,7 @@ SRCS	=	ft_memset.c \
 			ft_strncmp.c \
 			ft_strlcpy.c \
 			ft_strlcat.c \
+			ft_calloc.c \
 			ft_strnstr.c \
 			ft_atoi.c \
 			ft_strdup.c \
