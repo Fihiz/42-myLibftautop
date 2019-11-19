@@ -6,9 +6,14 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:58:52 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/24 15:59:00 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/18 19:20:22 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_strtrim(char const *s1, char const *s2)
+{
+	
+}

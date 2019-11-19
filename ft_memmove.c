@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 14:44:33 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/15 06:35:44 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/19 16:01:09 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -34,10 +34,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*int		main()
-{
-	printf("%s", ft_memmove("cestok", "cestpasok", 5));
-	printf("%s", memmove("cestok", "cestpasok", 5));
-	return (0);
-}*/

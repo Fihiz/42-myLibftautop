@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 17:55:10 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/10/16 12:50:27 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/19 15:19:59 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,7 @@
 
 size_t		ft_strlen(const char *s)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
 	while (s[len])

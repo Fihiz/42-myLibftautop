@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/16 18:45:18 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/15 03:07:21 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/19 15:48:07 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,7 @@
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (s1[i] == s2[i])

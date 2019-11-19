@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/17 15:10:55 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/16 13:38:39 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/19 15:48:49 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (src == 0 || dst == 0)

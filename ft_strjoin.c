@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:57:00 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/15 12:26:50 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/19 15:59:55 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -29,7 +29,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		concat[i] = s1[i];
 		i++;
 	}
-	while(s2[ind])
+	while (s2[ind])
 	{
 		concat[i + ind] = s2[ind];
 		ind++;
