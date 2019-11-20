@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:58:52 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/20 16:42:27 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/20 18:19:13 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -47,7 +47,7 @@ size_t	ft_check_end(char const *s1, char const *set)
 		count = 0;
 		while (set[count])
 		{
-			if(s1[end] == set[count])
+			if (s1[end] == set[count])
 			{
 				end--;
 				count = 0;
@@ -82,16 +82,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	while (i < (end - start))
 	{
-		*dest = s1[start];
-		start++;
-		i++;
 	}
 	return (dest);
 }
 
 int		main()
 {
-	char *s1 = "alimqte"		;
+	char *s1 = "alimqte";
 	char *set = "alt";
 	printf("%s", ft_strtrim(s1, set));
 	return (0);
