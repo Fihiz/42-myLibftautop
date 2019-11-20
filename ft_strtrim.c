@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:58:52 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/20 15:26:56 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/20 16:42:27 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -61,13 +61,38 @@ size_t	ft_check_end(char const *s1, char const *set)
 	return (end);
 }
 
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	char	*dest;
+	size_t		start;
+	size_t		end;
+	size_t		i;
+
+	start = ft_check_start(s1, set);
+	end = ft_check_end(s1, set);
+	/*if (end < start)
+	{
+		if (!(dest = (char*)malloc(sizeof(char) * 1)))
+			return (NULL);
+		dest[0] = '\0';
+		return (dest);
+	}*/
+	if (!(dest = (char*)malloc(sizeof(char) * (end - start))))
+		return (NULL);
+	i = 0;
+	while (i < (end - start))
+	{
+		*dest = s1[start];
+		start++;
+		i++;
+	}
+	return (dest);
+}
 
 int		main()
 {
-	char *set = "alimqte"		;
-	printf("%zu\n", ft_check_start("0123456789", set));
-	char *sit = "987";
-	printf("\n");
-	printf("%zu\n", ft_check_end("0123456789", sit));
+	char *s1 = "alimqte"		;
+	char *set = "alt";
+	printf("%s", ft_strtrim(s1, set));
 	return (0);
 }
