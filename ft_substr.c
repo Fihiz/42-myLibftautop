@@ -24,11 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (start >= ft_strlen(s))
 		len = 0;
 	while (s[start] && len--)
-	{
-		sub[i] = s[start];
-		i++;
-		start++;
-	}
+		sub[i++] = s[start++];
 	sub[i] = '\0';
 	return (sub);
 }

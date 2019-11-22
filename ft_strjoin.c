@@ -19,21 +19,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	ind;
 	char	*concat;
 
-	i = 0;
-	ind = 0;
-	if (s1 == 0 || !(concat = (char*)malloc(sizeof(char) * (ft_strlen(s1)
-						+ ft_strlen(s2) + 1))))
+	i = -1;
+	ind = -1;
+	if (s1 == 0 ||
+		!(concat = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
 		return (NULL);
-	while (i < ft_strlen(s1))
-	{
+	while (++i < ft_strlen(s1))
 		concat[i] = s1[i];
-		i++;
-	}
-	while (s2[ind])
-	{
+	while (s2[++ind])
 		concat[i + ind] = s2[ind];
-		ind++;
-	}
 	concat[i + ind] = '\0';
 	return (concat);
 }

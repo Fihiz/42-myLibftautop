@@ -13,8 +13,6 @@
 
 NAME	=	libft.a
 
-LIB		=	libft.h
-
 SRCS	=	ft_memset.c \
 			ft_bzero.c \
 			ft_memcpy.c \
@@ -57,15 +55,16 @@ HEADER	=	libft.h
 
 all:	$(NAME)
 
-$(NAME):	$(OBJS)
-			ar rcs $(NAME) $(OBJS)
+$(NAME):	$(OBJS) $(HEADER)
+	ar rcs $(NAME) $(OBJS)
 
-%.o:%.c $(HEADER)
+%.o: %.c $(HEADER)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-			rm -f	$(OBJS)
+	rm -f	$(OBJS)
 
 fclean:		clean
-			rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all

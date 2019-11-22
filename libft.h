@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 12:18:44 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/20 13:16:24 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/22 15:49:35 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <string.h>
 # include <unistd.h>
+# include <ctype.h>
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);

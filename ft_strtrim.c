@@ -6,14 +6,14 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:58:52 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/20 18:19:13 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/22 18:22:55 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_check_start(char const *s1, char const *set)
+/*size_t	ft_check_start(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	count;
@@ -70,26 +70,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	start = ft_check_start(s1, set);
 	end = ft_check_end(s1, set);
-	/*if (end < start)
+	if (end < start)
 	{
 		if (!(dest = (char*)malloc(sizeof(char) * 1)))
 			return (NULL);
 		dest[0] = '\0';
 		return (dest);
-	}*/
+	}
 	if (!(dest = (char*)malloc(sizeof(char) * (end - start))))
 		return (NULL);
 	i = 0;
-	while (i < (end - start))
-	{
-	}
 	return (dest);
-}
+}*/
 
-int		main()
-{
-	char *s1 = "alimqte";
-	char *set = "alt";
-	printf("%s", ft_strtrim(s1, set));
-	return (0);
-}
