@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/11/20 12:12:07 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/11/23 22:02:44 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -43,7 +43,8 @@ SRCS	=	ft_memset.c \
 			ft_putnbr_fd.c \
 			ft_strjoin.c \
 			ft_substr.c \
-			ft_strtrim.c
+			ft_strtrim.c \
+			ft_strmapi.c
 
 OBJS	=	$(SRCS:.c=.o)
 
