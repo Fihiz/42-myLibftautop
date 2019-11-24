@@ -6,7 +6,7 @@
 /*   By: sad-aude <sad-aude@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:59:26 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/24 14:01:54 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/24 17:21:12 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -53,29 +53,40 @@ char	*ft_malloc(char const *s, char sep)
 	return (word);
 }
 
+char	**ft_free(char **dest)
+{
+	int i;
+
+	i = 0;
+	while (dest[i++])
+		free(dest[i]);
+	free(dest);
+	return (0);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**dest;
 	int		i;
-    int     ind;
+	int		ind;
 
     i = 0;
-    ind = 0;
+	ind = 0;
 	if (!s || !(dest = (char **)malloc(sizeof(char *) * (ft_countwords(s, c) + 1))))
         return (NULL);
 	while (s[i])
 	{
 		while (s[i] && s[i] == c)
 			i++;
-		if (s[i] && s[i] != c)
+		if (s[i] && s[i] != c)	
 		{
-			dest[ind] = ft_malloc(s, c);
-			ind++;
+			if(!(dest[ind] = ft_malloc(s + i, c)))
+				return (ft_free(dest));
+			++ind;
 			while (s[i] && s[i] != c)
 				i++;
 		}
-        i++;
 	}
-	dest[ind] = NULL;
+	dest[ind] = 0;
 	return (dest);
-} 
+}

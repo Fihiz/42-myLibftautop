@@ -6,7 +6,7 @@
 /*   By: sad-aude <sad-aude@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 15:58:52 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/24 14:00:47 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/24 14:28:34 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -17,7 +17,6 @@ char		*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	char	*dest;
 
 	if (s1 == 0 || set == 0)
 		return (0);
@@ -26,12 +25,7 @@ char		*ft_strtrim(char const *s1, char const *set)
 		start++;
 	end = ft_strlen(s1);
 	if (start == end)
-	{
-		if (!(dest = (char*)malloc(sizeof(char) * 1)))
-			return (NULL);
-		dest[0] = '\0';
-		return (dest);
-	}
+		return (ft_calloc(start, end));
 	end--;
 	while (s1[end] && ft_strchr(set, s1[end]))
 		end--;
