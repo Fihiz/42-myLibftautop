@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/24 14:26:40 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/12 10:12:12 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/25 14:06:44 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -29,12 +29,6 @@ int		ft_atoi(const char *str)
 		if (str[i++] == '-')
 			signe *= -1;
 	while (str[i] >= '0' && str[i] <= '9')
-	{
-		if (nb * signe < -2147483648)
-			return (0);
-		if (nb * signe > 2147483647)
-			return (-1);
 		nb = (nb * 10) + (str[i++] - '0');
-	}
 	return (nb * signe);
 }
