@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/11/25 14:35:44 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/11/27 22:23:40 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -48,7 +48,11 @@ SRCS	=	ft_memset.c \
 			ft_split.c \
 			ft_itoa.c
 
+BONUSSRCS	=	ft_lstnew.c \
+
 OBJS	=	$(SRCS:.c=.o)
+
+OBJS_BONUS	=	$(BONUSSRCS:.c=.o)
 
 CC		=	gcc
 
@@ -64,8 +68,11 @@ $(NAME):	$(OBJS) $(HEADER)
 %.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+bonus:	$(OBJS) $(OBJS_BONUS)
+	ar rcs $(NAME) $(OBJS) $(OBJS_BONUS)
+
 clean:
-	rm -f	$(OBJS)
+	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean:		clean
 	rm -f $(NAME)

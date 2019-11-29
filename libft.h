@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 12:18:44 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/26 20:36:16 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/11/27 22:09:39 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -20,11 +20,11 @@
 # include <unistd.h>
 # include <ctype.h>
 
-typedef	struct	s_list
+typedef	struct		s_list
 {
 	void			*content;
 	struct	s_list	*next;
-}					t_list;
+}	t_list;
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
 void			*ft_memcpy(void *dest, const void *src, size_t n);
