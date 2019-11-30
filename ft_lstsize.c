@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_lstnew.c                                      .::    .:/ .      .::   */
+/*   ft_lstsize.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: sad-aude <sad-aude@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/11/26 20:39:32 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/30 03:39:09 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/11/30 02:54:44 by sad-aude     #+#   ##    ##    #+#       */
+/*   Updated: 2019/11/30 04:28:56 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int		ft_lstsize(t_list *lst)
 {
-	t_list	*data;
+	int len;
 
-	if (!(data = malloc(sizeof(t_list))))//(sizeof(*data))
-		return (NULL);
-	if (content)
-		data->content = content;
-	else
-		data->content = NULL;
-	data->next = NULL;
-	return (data);
+	len = 0;
+	if (!lst)
+		return (0);
+	while (lst)
+	{
+		lst = lst->next;
+		len++;
+	}
+	return (len);
 }

@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/11/27 22:23:40 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/11/30 04:34:41 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -49,6 +49,10 @@ SRCS	=	ft_memset.c \
 			ft_itoa.c
 
 BONUSSRCS	=	ft_lstnew.c \
+				ft_lstadd_front.c \
+				ft_lstsize.c \
+				ft_lstlast.c \
+				ft_lstadd_back.c
 
 OBJS	=	$(SRCS:.c=.o)
 
