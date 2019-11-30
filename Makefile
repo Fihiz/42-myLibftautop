@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/11/30 05:13:28 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/11/30 18:50:14 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -23,7 +23,6 @@ SRCS	=	ft_memset.c \
 			ft_strlen.c \
 			ft_isalpha.c \
 			ft_isdigit.c \
-	if (new)
 			ft_isalnum.c \
 			ft_isascii.c \
 			ft_isprint.c \
@@ -49,12 +48,14 @@ SRCS	=	ft_memset.c \
 			ft_split.c \
 			ft_itoa.c
 
-BONUSSRCS	=	ft_lstnew.c \
-				ft_lstadd_front.c \
-				ft_lstsize.c \
-				ft_lstlast.c \
-				ft_lstadd_back.c \
-				ft_lstdelone.c
+BONUSSRCS	=	ft_lstnew_bonus.c \
+				ft_lstadd_front_bonus.c \
+				ft_lstsize_bonus.c \
+				ft_lstlast_bonus.c \
+				ft_lstadd_back_bonus.c \
+				ft_lstdelone_bonus.c \
+				ft_lstclear_bonus.c \
+				ft_lstiter_bonus.c
 
 OBJS	=	$(SRCS:.c=.o)
 
