@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/11/30 18:50:14 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/12/02 21:54:10 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -54,8 +54,9 @@ BONUSSRCS	=	ft_lstnew_bonus.c \
 				ft_lstlast_bonus.c \
 				ft_lstadd_back_bonus.c \
 				ft_lstdelone_bonus.c \
+				ft_lstiter_bonus.c \
 				ft_lstclear_bonus.c \
-				ft_lstiter_bonus.c
+				ft_lstmap_bonus.c
 
 OBJS	=	$(SRCS:.c=.o)
 

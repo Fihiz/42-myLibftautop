@@ -1,32 +1,38 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_lstclear_bonus.c                              .::    .:/ .      .::   */
+/*   ft_lstmap_bonus.c                                .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/11/30 18:22:09 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/02 21:39:19 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/12/02 21:45:24 by sad-aude     #+#   ##    ##    #+#       */
+/*   Updated: 2019/12/02 23:04:57 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
 {
-	t_list *copy;
-	t_list *next;
+	t_list	*temp;
+	t_list	*new;
+	t_list	*final;
 
-	if (!*lst || !del)
-		return ;
-	copy = *lst;
-	while (copy)
+	if (!lst || !f)
+		return (NULL);
+	if (!(final = ft_lstnew(f(lst->content))))
+			return (NULL);
+	temp = lst->next;
+	while (temp)
 	{
-		next = copy->next;
-		del(copy->content);
-		free(copy);
-		copy = next;
+		if (!(new = ft_lstnew(f(temp->content))))
+		{
+			ft_lstclear(&final, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&final, new);
+		temp = temp->next; //mon incrementation
 	}
-	*lst = NULL;
+	return (final);
 }
