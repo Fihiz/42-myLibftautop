@@ -6,7 +6,7 @@
 /*   By: sad-aude <sad-aude@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 12:18:44 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/02 22:18:35 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/03 15:54:35 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,7 +18,6 @@
 # include <stdio.h>
 # include <string.h>
 # include <unistd.h>
-# include <ctype.h>
 
 typedef	struct	s_list
 {
