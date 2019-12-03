@@ -6,7 +6,7 @@
 #    By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/10/23 23:51:34 by sad-aude     #+#   ##    ##    #+#        #
-#    Updated: 2019/12/03 15:31:33 by sad-aude    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/12/03 15:48:56 by sad-aude    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -68,7 +68,7 @@ CFLAGS	=	-Wall -Wextra -Werror
 
 HEADER	=	libft.h
 
-all:	$(NAME) bonus
+all:	$(NAME)
 
 $(NAME):	$(OBJS) $(HEADER)
 	ar rcs $(NAME) $(OBJS)
