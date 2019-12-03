@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/11/30 18:22:09 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/02 21:39:19 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/02 23:13:46 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -26,7 +26,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		next = copy->next;
 		del(copy->content);
 		free(copy);
-		copy = next;
+		copy = copy->next;
 	}
 	*lst = NULL;
 }
