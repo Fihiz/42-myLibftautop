@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/15 14:44:33 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/19 16:01:09 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/03 11:53:13 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -29,5 +29,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		while (n--)
 			*(desti + n) = *(str + n);
 	}
-	return (dest);
+	return (desti);
 }

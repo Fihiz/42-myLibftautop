@@ -6,7 +6,7 @@
 /*   By: sad-aude <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/22 17:16:57 by sad-aude     #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/19 15:38:39 by sad-aude    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/03 12:52:11 by sad-aude    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,5 +23,5 @@ char	*ft_strrchr(const char *s, int c)
 		if (s[len] == c)
 			return ((char *)s + len);
 	}
-	return (0);
+	return (NULL);
 }
